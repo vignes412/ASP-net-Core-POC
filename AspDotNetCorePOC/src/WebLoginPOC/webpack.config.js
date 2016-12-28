@@ -11,7 +11,7 @@ var webpack = require('webpack');
 
 module.exports = {
     entry: {
-        "my-leads": path.join(__dirname, 'wwwroot/js/containers', 'startMain.jsx')
+        "my-leads": path.join(__dirname, 'wwwroot/js', 'startMain.jsx')
     },
     output: {
         path: path.join(__dirname, 'wwwroot/js', 'release'),

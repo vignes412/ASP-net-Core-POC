@@ -37,6 +37,13 @@ namespace AspDotNetCorePOC
         {
             // Add framework services.
             services.AddMvc();
+            services.AddCors();
+
+            var policy = new Microsoft.AspNetCore.Cors.Infrastructure.CorsPolicy();
+
+            policy.Headers.Add("*");
+            policy.Methods.Add("*");
+            policy.Origins.Add("*");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
