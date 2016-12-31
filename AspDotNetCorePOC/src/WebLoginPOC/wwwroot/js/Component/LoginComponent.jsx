@@ -1,8 +1,9 @@
 ﻿var React = require('react');
 var axios = require('axios');
-
+var rp = require('request-promise');
 var LoginComponent = React.createClass({
     getInitialState: function () {
+
         return {
             user: "",
             pass:""
@@ -20,10 +21,20 @@ var LoginComponent = React.createClass({
     },
     HandleLoginAuthentication:function(){
         axios.post("https://localhost:5000/token"
-            , { username: this.state.user, pass: this.state.pass })
+            , JSON.stringify({
+                    username: this.state.user,
+                    password: this.state.pass
+               
+            }), {
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            })
             .then(function (result) {
             console.log(result.data)
-        });
+            }).catch(function (error) {
+                console.log(error);
+            });
 
     },
     render: function() {

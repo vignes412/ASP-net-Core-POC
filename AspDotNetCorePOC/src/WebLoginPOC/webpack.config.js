@@ -32,6 +32,9 @@ module.exports = {
         //})
     ],
     module: {
+        preLoaders: [
+           { test: /\.json$/, loader: 'json' },
+        ],
         loaders: [
              
         {
