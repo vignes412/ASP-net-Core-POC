@@ -4,7 +4,7 @@ using Android.OS;
 
 namespace IOTAndroidPOC
 {
-    [Activity(Label = "IOTAndroidPOC", MainLauncher = true, Icon = "@drawable/icon")]
+    [Activity(Label = "PIOT", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
         protected override void OnCreate(Bundle bundle)

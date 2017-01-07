@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("IOTAndroidPOC.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("piot.Resource", IsApplication=true)]
 
-namespace IOTAndroidPOC
+namespace piot
 {
 	
 	
